@@ -1,0 +1,146 @@
+/* navigation section */
+
+body {
+    /* margin: 0px 0px; */
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul {
+    margin-right: 70px;
+    margin: 10px 2px;
+}
+
+#logo {
+    margin-right: 50px;
+}
+
+#navbar ul li a {
+    font-size: 0.6rem;
+    padding: 0px 1px;
+}
+
+#navbar img {
+    margin-left: 50%;
+}
+
+#navbar ul {
+    margin: 0px -15px;
+    padding-bottom: 10px;
+}
+
+
+/* Home section */
+
+#home {
+    height: 200px;
+    width: 100vw;
+    padding: 4px 50px;
+}
+
+#home::before {
+    height: 486px;
+}
+
+#home h1 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 144px;
+}
+
+#home p {
+    font-size: 10px;
+    margin: 0px 10px;
+}
+
+
+/* services section */
+
+#services {
+    flex-direction: column;
+    width: 100vw;
+}
+
+.h-primary {
+    font-size: 1.6rem;
+    margin-top: 164px;
+    margin-right: 30px;
+}
+
+#services .box {
+    height: 300px;
+    width: 240px;
+    display: block;
+    padding: 4px 16px;
+    margin-left: 102px;
+}
+
+#services .box p {
+    font-size: 12px;
+    margin: 10px 48px;
+}
+
+
+/* client section */
+
+#client-section {
+    width: 100vw;
+}
+
+#clients {
+    overflow: hidden;
+    padding: 4px 50px;
+}
+
+#h-prime {
+    /* margin-top: 174px; */
+    font-size: 28px;
+    margin-left: -25px;
+}
+
+.client-items img {
+    height: 50px;
+    width: 60px;
+}
+
+
+/* contact us */
+
+#contact {
+    width: 100vw;
+}
+
+#contact::before {
+    content: "";
+    width: 110%;
+}
+
+#contact-section {
+    margin: 0px 50px;
+    padding-left: 80px;
+}
+
+#contact input,
+#contact textarea {
+    width: 200px;
+}
+
+#contact label {
+    margin: 0px auto;
+}
+
+#h-contact {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+
+/* footer section */
+
+footer {
+    font-size: 9px;
+    margin-top: 65px;
+    width: 100%;
+}

@@ -1,0 +1,279 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+#navbar {
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* ->makes the navbar stick to the top on scroll */
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo {
+    margin: 5px 1px;
+}
+
+
+/* navbar:logo image  */
+
+#navbar img {
+    width: 60px;
+    height: 60px;
+    margin: 9px 22px;
+}
+
+
+/* navbar list styling */
+
+#navbar ul {
+    display: flex;
+    margin: 22px 12px;
+    /* overflow: auto; */
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 6px 10px;
+    font-size: 1.4rem;
+    color: white;
+    /* border: 2px solid rosybrown; */
+    border-radius: 8px;
+}
+
+#navbar li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#navbar li {
+    list-style: none;
+    margin: 11px 11px;
+}
+
+#home {
+    display: flex;
+    height: 537px;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: -30px;
+    color: black;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+    color: rebeccapurple;
+    text-shadow: 2px 2px black;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#home p {
+    font-size: 1.3rem;
+    text-shadow: 2px 2px rgb(12, 236, 206);
+}
+
+.btn {
+    margin: 40px 0px;
+    padding: 5px 9px;
+    color: black;
+    font-size: 21px;
+    background-color: rgba(80, 162, 50, 0.35);
+    border: 2px solid burlywood;
+    border-radius: 16px;
+    font-weight: bold;
+    transition: all 0.7s linear;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+    margin: -26px -4px;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #5fda201a;
+}
+
+#services .box img {
+    height: 140px;
+    width: 140px;
+}
+
+#services .box {
+    height: 300px;
+    width: 400px;
+    display: block;
+    padding: 13px 13px;
+    margin: 10px 108px;
+    box-shadow: 3px 3px rgb(181, 187, 104);
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: rgb(255 236 202 / 12%);
+}
+
+#services .box p {
+    margin: 32px 19px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+}
+
+.h-primary {
+    margin: 81px auto;
+    text-align: center;
+    font-size: 2.3rem;
+    text-shadow: 1px 1px black;
+}
+
+#services .box .h-second {
+    text-align: center;
+}
+
+#client-section {
+    box-sizing: border-box;
+    position: relative;
+    top: -187px;
+}
+
+#clients {
+    height: 189px;
+    /* width: vw; */
+    /* margin-bottom: -150px; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: -169px 0px;
+    /* border: 2px solid olivedrab; */
+}
+
+.client-items {
+    margin: 0px 20px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg2.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.client-items img {
+    height: 79px;
+}
+
+#h-prime {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 221px auto;
+    color: rgb(218, 17, 101);
+    text-shadow: 2px 2px black;
+}
+
+#contact-section {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h-contact {
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px chocolate;
+    margin: -12px auto;
+}
+
+#contact {
+    position: relative;
+    margin: -40px;
+}
+
+#contact-section {
+    padding: 18px 0px;
+}
+
+#contact input,
+#contact textarea {
+    display: block;
+    width: 379px;
+    margin: 6px 31px;
+    padding: 6px 3px;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid burlywood;
+    border-radius: 0.5rem;
+}
+
+#contact label {
+    color: black;
+    font-size: 1.4rem;
+    margin: 0px 37px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("../img/contact.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 104%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: -20px 0px;
+    padding: 15px 0px;
+    height: 27px;
+}
